@@ -13,3 +13,4 @@ example/emptyExample.sdf
 *.idb
 *.res
 *.lib
+*.opensdf
