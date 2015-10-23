@@ -1,2 +1,4 @@
 *.suo
 example/emptyExample.sdf
+*.dll
+*.ilk

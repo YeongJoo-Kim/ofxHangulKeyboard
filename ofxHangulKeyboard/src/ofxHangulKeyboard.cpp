@@ -45,55 +45,59 @@ void ofxHangulKeyboard::_setup(ofEventArgs &e)
 
 void ofxHangulKeyboard::setup()
 {
-	m_LocalPosition = ofPoint(38, 686, 0);
+	m_LocalPosition = ofPoint(0, 410, 0);
 	float _x = m_LocalPosition.x;
 	float _y = m_LocalPosition.y;
 
 	m_enLanguage = EN_KL_ENGLISH;
 
-	m_KeyboardImage[KEYBOARD_IMAGE_NORMAL].loadImage("images/input_name/keybard_off.png");
-	m_KeyboardImage[KEYBOARD_IMAGE_PRESS].loadImage("images/input_name/keybard_on.png");
+	m_KeyboardImage[KEYBOARD_IMAGE_NORMAL].loadImage("normal.png");
+	m_KeyboardImage[KEYBOARD_IMAGE_PRESS].loadImage("push.png");
 	
 	ofxKey::setKeyboardBasePosition(m_LocalPosition);
 	ofxKey::_KeyBoardImage_Press = m_KeyboardImage[KEYBOARD_IMAGE_PRESS];
 	
+	//첫번째줄
+	m_KeyMap[OF_KEY_BACKSPACE] = ofxKey(893, 12, 118, 59, OF_KEY_BACKSPACE); 
 
 	//2nd line
-	m_KeyMap['q'] = ofxKey(32, 22, 82, 86, 'q');
-	m_KeyMap['w'] = ofxKey(135, 22, 82, 86, 'w');
-	m_KeyMap['e'] = ofxKey(237, 22, 82, 86, 'e');
-	m_KeyMap['r'] = ofxKey(340, 22, 82, 86, 'r');
-	m_KeyMap['t'] = ofxKey(442 ,22, 82, 86, 't');
-	m_KeyMap['y'] = ofxKey(545, 22, 82, 86, 'y');
-	m_KeyMap['u'] = ofxKey(647, 22, 82, 86, 'u');
-	m_KeyMap['i'] = ofxKey(750, 22, 82, 86, 'i');
-	m_KeyMap['o'] = ofxKey(852, 22, 82, 86, 'o');
-	m_KeyMap['p'] = ofxKey(955, 22, 82, 86, 'p');
-	m_KeyMap[OF_KEY_BACKSPACE] = ofxKey(1059, 22, 117, 86, OF_KEY_BACKSPACE); 
+	m_KeyMap['q'] = ofxKey(111, 81, 59, 59, 'q');
+	m_KeyMap['w'] = ofxKey(179, 81, 59, 59, 'w');
+	m_KeyMap['e'] = ofxKey(246, 81, 59, 59, 'e');
+	m_KeyMap['r'] = ofxKey(314, 81, 59, 59, 'r');
+	m_KeyMap['t'] = ofxKey(381 ,81, 59, 59, 't');
+	m_KeyMap['y'] = ofxKey(449, 81, 59, 59, 'y');
+	m_KeyMap['u'] = ofxKey(516, 81, 59, 59, 'u');
+	m_KeyMap['i'] = ofxKey(584, 81, 59, 59, 'i');
+	m_KeyMap['o'] = ofxKey(652, 81, 59, 59, 'o');
+	m_KeyMap['p'] = ofxKey(719, 81, 59, 59, 'p');
 
 	//3th line
-	m_KeyMap[OF_KEY_LEFT_SHIFT] = ofxKey(58, 111, 117, 86, OF_KEY_LEFT_SHIFT);
-	m_KeyMap['a'] = ofxKey(186, 111, 82, 86, 'a');
-	m_KeyMap['s'] = ofxKey(289, 111, 82, 86, 's');
-	m_KeyMap['d'] = ofxKey(391, 111, 82, 86, 'd');
-	m_KeyMap['f'] = ofxKey(494, 111, 82, 86, 'f');
-	m_KeyMap['g'] = ofxKey(596, 111, 82, 86, 'g');
-	m_KeyMap['h'] = ofxKey(699, 111, 82, 86, 'h');
-	m_KeyMap['j'] = ofxKey(801, 111, 82, 86, 'j');
-	m_KeyMap['k'] = ofxKey(904, 111, 82, 86, 'k');
-	m_KeyMap['l'] = ofxKey(1006, 111, 82, 86, 'l');
-							
+	m_KeyMap['a'] = ofxKey(141, 149, 59, 59, 'a');
+	m_KeyMap['s'] = ofxKey(209, 149, 59, 59, 's');
+	m_KeyMap['d'] = ofxKey(277, 149, 59, 59, 'd');
+	m_KeyMap['f'] = ofxKey(346, 149, 59, 59, 'f');
+	m_KeyMap['g'] = ofxKey(414, 149, 59, 59, 'g');
+	m_KeyMap['h'] = ofxKey(483, 149, 59, 59, 'h');
+	m_KeyMap['j'] = ofxKey(551, 149, 59, 59, 'j');
+	m_KeyMap['k'] = ofxKey(619, 149, 59, 59, 'k');
+	m_KeyMap['l'] = ofxKey(688, 149, 59, 59, 'l');
+	m_KeyMap[OF_KEY_RETURN] = ofxKey(893, 149, 118, 59, OF_KEY_RETURN);
+
 	//4th line
-	m_KeyMap['z'] = ofxKey(31, 200,  82, 86, 'z');
-	m_KeyMap['x'] = ofxKey(134, 200, 82, 86, 'x');
-	m_KeyMap['c'] = ofxKey(236, 200, 82, 86, 'c');
-	m_KeyMap['v'] = ofxKey(339, 200, 82, 86, 'v');
-	m_KeyMap['b'] = ofxKey(441, 200, 82, 86, 'b');
-	m_KeyMap['n'] = ofxKey(544, 200, 82, 86, 'n');
-	m_KeyMap['m'] = ofxKey(646, 200, 82, 86, 'm');
+	m_KeyMap[OF_KEY_LEFT_SHIFT] = ofxKey(13, 218, 147, 59, OF_KEY_LEFT_SHIFT);
+	m_KeyMap['z'] = ofxKey(170, 218,  59, 59, 'z');
+	m_KeyMap['x'] = ofxKey(236, 218, 59, 59, 'x');
+	m_KeyMap['c'] = ofxKey(302, 218, 59, 59, 'c');
+	m_KeyMap['v'] = ofxKey(369, 218, 59, 59, 'v');
+	m_KeyMap['b'] = ofxKey(435, 218, 59, 59, 'b');
+	m_KeyMap['n'] = ofxKey(501, 218, 59, 59, 'n');
+	m_KeyMap['m'] = ofxKey(567, 218, 59, 59, 'm');
+	m_KeyMap[OF_KEY_RIGHT_SHIFT] = ofxKey(834, 218, 177, 59, OF_KEY_RIGHT_SHIFT);
 							
-	m_KeyMap[' '] = ofxKey(751, 200, 287, 86 , ' ');
-	m_KeyMap[OF_KEY_RETURN] = ofxKey(1060, 200, 115, 86, OF_KEY_RETURN);
+	m_KeyMap[' '] = ofxKey(262, 286, 415, 59 , ' ');
+	m_KeyMap[OF_KEY_HANGUL] = ofxKey(687, 286, 73, 59 , ' ');
+
 
 	ofAddListener(ofxKey::KeyEvent, this, &ofxHangulKeyboard::keyDownEvent);
 	ofAddListener(ofxKey::KeyUpEvent, this, &ofxHangulKeyboard::keyUpEvent);
@@ -139,47 +143,13 @@ void ofxHangulKeyboard::draw()
 
 	ofEnableAlphaBlending();
 	
-	if(!m_Tween.isCompleted())
-	{
-		float fTween = m_Tween.update();
-		int iWindowsHeight = ofGetHeight();
-
-		int _y  = iWindowsHeight - (float(iWindowsHeight - m_LocalPosition.y) *  fTween);
-
-		m_KeyboardImage[KEYBOARD_IMAGE_NORMAL].draw(m_LocalPosition.x, _y);
-	}
-	else
-	{
-		m_KeyboardImage[KEYBOARD_IMAGE_NORMAL].draw(m_LocalPosition);		
-	}
+	m_KeyboardImage[KEYBOARD_IMAGE_NORMAL].draw(m_LocalPosition);
 
 
 	if(m_bShowKeyboard) for(auto it = m_KeyMap.begin() ; it != m_KeyMap.end() ; ++it) it->second.draw();
 
-	ofPushMatrix();
-	ofTranslate(m_LocalPosition.x, m_LocalPosition.y);
-
-	//
-
-	//ofFill();
-	//ofSetHexColor(backgroundColor);
-	//rBox();
-
-// 	ofNoFill();
-// 	ofSetLineWidth(2);
-// 	ofSetHexColor(foregroundColor);
-// 	rBox();
-
-	ofPopMatrix();
 }
-/*
-void ofxHangulKeyboard::ClearKeyBuffer()
-{
-	m_wstrKeyboardText = L"";
 
-	m_automataKr.Clear();
-}
-*/
 void ofxHangulKeyboard::keyUpEvent(ofxKey &e)
 {
 	int iKeyCode = e.getKeyCode();
@@ -204,18 +174,19 @@ void ofxHangulKeyboard::keyDownEvent(ofxKey &e) {
 	//	m_keys[41].showPressImage();
 		break;
 	case OF_KEY_LEFT_SHIFT:
+	case OF_KEY_RIGHT_SHIFT:
 		m_KeyMap[OF_KEY_LEFT_SHIFT].setKeepPress(true);
+		m_KeyMap[OF_KEY_RIGHT_SHIFT].setKeepPress(true);
 		break;
 	default:
-		if(m_KeyMap[OF_KEY_LEFT_SHIFT].getKeepPress())
+		if(m_KeyMap[OF_KEY_LEFT_SHIFT].getKeepPress() || m_KeyMap[OF_KEY_RIGHT_SHIFT].getKeepPress())
 		{
 			iKeyCode -= ('a' - 'A');
 			m_KeyMap[OF_KEY_LEFT_SHIFT].setKeepPress(false);
+			m_KeyMap[OF_KEY_RIGHT_SHIFT].setKeepPress(false);
 		}
 
 		ofNotifyEvent(KeyboardPressEvent, iKeyCode);
-
-			
 		break;
 	}
 }
