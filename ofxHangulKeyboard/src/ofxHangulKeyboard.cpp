@@ -52,7 +52,7 @@ void ofxHangulKeyboard::setup()
 	m_enLanguage = EN_KL_ENGLISH;
 
 	m_KeyboardImage[KEYBOARD_IMAGE_NORMAL].loadImage("normal.png");
-	m_KeyboardImage[KEYBOARD_IMAGE_PRESS].loadImage("push.png");
+	m_KeyboardImage[KEYBOARD_IMAGE_PRESS].loadImage("press.png");
 	
 	ofxKey::setKeyboardBasePosition(m_LocalPosition);
 	ofxKey::_KeyBoardImage_Press = m_KeyboardImage[KEYBOARD_IMAGE_PRESS];
@@ -127,7 +127,6 @@ void ofxHangulKeyboard::showKeyboard(bool show)
 // 	else 
 // 		disableAppEvents();
 
-	m_Tween.setParameters(0, m_easingCubic, ofxTween::easeOut, 0, 1.0 , 1000, 0);
 }
 
 void ofxHangulKeyboard::update()

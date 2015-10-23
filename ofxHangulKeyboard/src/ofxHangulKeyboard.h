@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include "ofxKey.h"
-#include "ofxTween.h"
+#define OF_KEY_HANGUL	0xF2
 
 class ofxHangulKeyboard
 {
@@ -25,7 +25,6 @@ public:
 		KEYBOARD_IMAGE_MAX,
 	};
 
-	//vector<ofxKey>	m_keys;							// vector of keys
 	map<int , ofxKey> m_KeyMap;
 
 	wstring getText() {return m_wstrKeyboardText;};
@@ -79,9 +78,6 @@ protected:
 	string m_strKeyboardText;
 	
 	ofImage		m_KeyboardImage[KEYBOARD_IMAGE_MAX];
-
-	ofxTween			m_Tween;
-	ofxEasingCubic		m_easingCubic;
 };
 
 #endif

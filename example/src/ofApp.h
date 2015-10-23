@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxKeyboard.h"
+#include "..\..\ofxHangulKeyboard\src\ofxHangulKeyboard.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -19,5 +19,5 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-		ofxKeyboard keyboard;
+		ofxHangulKeyboard keyboard;
 };

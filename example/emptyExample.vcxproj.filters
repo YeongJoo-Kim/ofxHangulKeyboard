@@ -1,24 +1,75 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<ClCompile Include="src\ofApp.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-		<ClCompile Include="src\main.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-	</ItemGroup>
-	<ItemGroup>
-		<Filter Include="src">
-			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
-		</Filter>
-	</ItemGroup>
-	<ItemGroup>
-		<ClInclude Include="src\ofApp.h">
-			<Filter>src</Filter>
-		</ClInclude>
-	</ItemGroup>
-	<ItemGroup>
-		<ResourceCompile Include="icon.rc" />
-	</ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.cpp">
+      <Filter>addons\ofxMSAInteractiveObject\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFTGL\src\ofxFTGLFont.cpp">
+      <Filter>addons\ofxFTGL\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ofxHangulKeyboard\src\ofxHangulKeyboard.cpp">
+      <Filter>addons\ofxHangulKeyboard\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ofxHangulKeyboard\libs\AutomataKR.cpp">
+      <Filter>addons\ofxHangulKeyboard\libs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{234dcc09-58f3-4074-a887-bcc75cc93d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMSAInteractiveObject">
+      <UniqueIdentifier>{5ffbf9a0-72f0-4ae5-a87c-08793955d441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMSAInteractiveObject\src">
+      <UniqueIdentifier>{448b9ac6-a3c3-4e94-bc5d-2f9a518d2513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFTGL">
+      <UniqueIdentifier>{547ce136-9e6b-407d-874b-962cccfec799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFTGL\src">
+      <UniqueIdentifier>{b1e0a965-8d93-4ae1-a7ac-2dd2356163c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHangulKeyboard">
+      <UniqueIdentifier>{d8f16e45-2fe4-481c-99e3-6b9f93170037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHangulKeyboard\src">
+      <UniqueIdentifier>{70a0ec1f-d7d4-4c60-88dd-3cc8e43511c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHangulKeyboard\libs">
+      <UniqueIdentifier>{cc799138-cbed-49a6-b6b1-0e7320d4e066}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.h">
+      <Filter>addons\ofxMSAInteractiveObject\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFTGL\src\ofxFTGLFont.h">
+      <Filter>addons\ofxFTGL\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ofxHangulKeyboard\src\ofxHangulKeyboard.h">
+      <Filter>addons\ofxHangulKeyboard\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ofxHangulKeyboard\src\ofxKey.h">
+      <Filter>addons\ofxHangulKeyboard\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ofxHangulKeyboard\libs\AutomataKR.h">
+      <Filter>addons\ofxHangulKeyboard\libs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
 </Project>
