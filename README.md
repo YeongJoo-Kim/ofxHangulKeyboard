@@ -1,5 +1,5 @@
 now do not working
 using ofxFTGL
-using ofxInteractiveObject
+using ofxMSAInteractiveObject
 
 openframeworks 8.4
