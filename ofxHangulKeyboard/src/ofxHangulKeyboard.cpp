@@ -11,7 +11,6 @@ ofEvent<int> ofxHangulKeyboard::KeyboardPressEvent;
 ofxHangulKeyboard::ofxHangulKeyboard()
 {
 	
-
 	m_wstrKeyboardText = L"";
 	ofAddListener(ofEvents().setup, this, &ofxHangulKeyboard::_setup);
 //	enableAppEvents();
@@ -57,7 +56,7 @@ void ofxHangulKeyboard::setup()
 	ofxKey::setKeyboardBasePosition(m_LocalPosition);
 	ofxKey::_KeyBoardImage_Press = m_KeyboardImage[KEYBOARD_IMAGE_PRESS];
 	
-	//첫번째줄
+	//1st list
 	m_KeyMap[OF_KEY_BACKSPACE] = ofxKey(893, 12, 118, 59, OF_KEY_BACKSPACE); 
 
 	//2nd line
