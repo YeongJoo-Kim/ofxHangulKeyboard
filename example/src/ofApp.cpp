@@ -24,10 +24,7 @@ void ofApp::onKeyboardPressEvent(const void*pSender, int& keyCode)
 
 	if(keyCode == OF_KEY_RETURN)
 	{
-//		m_strUserName = m_NameInputBox.getText();
-		
-//		m_strUserName.erase(remove(m_strUserName.begin(), m_strUserName.end(), L' '), m_strUserName.end());
-//		m_strUserName.erase(remove(m_strUserName.begin(), m_strUserName.end(), L'\0'), m_strUserName.end());
+
 	
 	}
 	else
