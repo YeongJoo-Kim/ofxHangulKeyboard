@@ -94,6 +94,7 @@
     <ClCompile Include="..\..\..\addons\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.cpp" />
     <ClCompile Include="..\ofxHangulKeyboard\libs\AutomataKR.cpp" />
     <ClCompile Include="..\ofxHangulKeyboard\src\ofxHangulKeyboard.cpp" />
+    <ClCompile Include="..\ofxHangulKeyboard\src\ofxTextInputBox.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
   </ItemGroup>
@@ -103,6 +104,7 @@
     <ClInclude Include="..\ofxHangulKeyboard\libs\AutomataKR.h" />
     <ClInclude Include="..\ofxHangulKeyboard\src\ofxHangulKeyboard.h" />
     <ClInclude Include="..\ofxHangulKeyboard\src\ofxKey.h" />
+    <ClInclude Include="..\ofxHangulKeyboard\src\ofxTextInputBox.h" />
     <ClInclude Include="src\ofApp.h" />
   </ItemGroup>
   <ItemGroup>

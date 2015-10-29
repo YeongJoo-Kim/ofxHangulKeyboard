@@ -19,6 +19,9 @@
     <ClCompile Include="..\ofxHangulKeyboard\libs\AutomataKR.cpp">
       <Filter>addons\ofxHangulKeyboard\libs</Filter>
     </ClCompile>
+    <ClCompile Include="..\ofxHangulKeyboard\src\ofxTextInputBox.cpp">
+      <Filter>addons\ofxHangulKeyboard\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -67,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="..\ofxHangulKeyboard\libs\AutomataKR.h">
       <Filter>addons\ofxHangulKeyboard\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ofxHangulKeyboard\src\ofxTextInputBox.h">
+      <Filter>addons\ofxHangulKeyboard\src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

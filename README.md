@@ -1,4 +1,3 @@
-now do not working
 using ofxFTGL
 using ofxMSAInteractiveObject
 

@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "..\..\ofxHangulKeyboard\src\ofxHangulKeyboard.h"
+#include "..\..\ofxHangulKeyboard\src\ofxTextInputBox.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -19,5 +20,8 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
+		void onKeyboardPressEvent(const void*pSender, int& keyCode);
+
 		ofxHangulKeyboard keyboard;
+		ofxTextInputBox textInputBox;
 };
