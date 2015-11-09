@@ -1,7 +1,3 @@
-/********  Test sample for ofxInteractiveObject									********/
-/********  Make sure you open your console to see all the events being output	********/
-
-
 #pragma once
 
 #include "ofxMSAInteractiveObject.h"
